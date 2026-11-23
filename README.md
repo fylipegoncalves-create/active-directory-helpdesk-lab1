@@ -30,11 +30,14 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 
 **Screenshots:**
 
- - Error: ![Account Lockout Error](screenshots/01-lockout-error.png)
+ - Error: 
+![Account Lockout Error](screenshots/01-lockout-error.png)
 
- - Fix: ![Account Unlocked in ADUC](screenshots/01-lockout-fix.png)
+ - Fix: 
+![Account Unlocked in ADUC](screenshots/01-lockout-fix.png)
 
- - Jira Ticket: ![Resolved Lockout Ticket](screenshots/01-lockout-resolved.png)
+ - Jira Ticket: 
+![Resolved Lockout Ticket](screenshots/01-lockout-resolved.png)
 
 ---
 
@@ -47,11 +50,14 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 
 **Screenshots:**
 
- - Error: ![Account Lockout Error](screenshots/02-expired-password-error.png)
+ - Error: 
+![Account Lockout Error](screenshots/02-expired-password-error.png)
 
- - Fix: ![Account Unlocked in ADUC](screenshots/02-expired-password-fix.png)
+ - Fix: 
+![Account Unlocked in ADUC](screenshots/02-expired-password-fix.png)
 
- - Jira Ticket: ![Resolved Lockout Ticket](screenshots/02-expired-password-resolved.png)
+ - Jira Ticket: 
+![Resolved Lockout Ticket](screenshots/02-expired-password-resolved.png)
 
 ---
 
@@ -64,11 +70,14 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 
 **Screenshots:**
 
- - Error: ![Account Lockout Error](screenshots/03-dns-failure-error.png)
+ - Error: 
+![Account Lockout Error](screenshots/03-dns-failure-error.png)
 
- - Fix: ![Account Unlocked in ADUC](screenshots/03-dns-failure-fix.png)
+ - Fix: 
+![Account Unlocked in ADUC](screenshots/03-dns-failure-fix.png)
 
- - Jira Ticket: ![Resolved Lockout Ticket](screenshots/03-dns-failure-resolved.png)
+ - Jira Ticket:
+ ![Resolved Lockout Ticket](screenshots/03-dns-failure-resolved.png)
 
 ---
 
@@ -81,8 +90,11 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 
 **Screenshots:**
 
- - Error: ![Account Lockout Error](screenshots/04-nfts-permission-error.png)
+ - Error: 
+![Account Lockout Error](screenshots/04-nfts-permission-error.png)
 
- - Fix: ![Account Unlocked in ADUC](screenshots/04-nfts-permission-fix.png)
+ - Fix: 
+![Account Unlocked in ADUC](screenshots/04-nfts-permission-fix.png)
 
- - Jira Ticket: ![Resolved Lockout Ticket](screenshots/04-nfts-permission-resolved.png)
+ - Jira Ticket: 
+![Resolved Lockout Ticket](screenshots/04-nfts-permission-resolved.png)
