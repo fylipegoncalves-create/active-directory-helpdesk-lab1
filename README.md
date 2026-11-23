@@ -5,16 +5,16 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 
 ## Lab Architecture
 
-**Domain:** `corp.local`
-**Domain Controller (`DC01`):** Windows Server 2022 (AD DS, DNS, DHCP, File Services)
-**Client (`CLIENT01`):** Windows 11 Enterprise (joined the domain)
-**Ticketing System:** Jira Service Management 
+- **Domain:** `corp.local`
+- **Domain Controller (`DC01`):** Windows Server 2022 (AD DS, DNS, DHCP, File Services)
+- **Client (`CLIENT01`):** Windows 11 Enterprise (joined the domain)
+- **Ticketing System:** Jira Service Management 
 
 
 ### Organizational Structure
-**OUs:** `CorpUsers` (`IT`, `Sales`), `CorpComputers`, `CorpGroups`
-**Security Groups:** `SG_IT`, `SG_Sales`
-**GPOs:** `Block_Control_Panel` (Linked to `Sales`), Default Domain Account Lockout Policy (3 invalid attempts)
+- **OUs:** `CorpUsers` (`IT`, `Sales`), `CorpComputers`, `CorpGroups`
+- **Security Groups:** `SG_IT`, `SG_Sales`
+- **GPOs:** `Block_Control_Panel` (Linked to `Sales`), Default Domain Account Lockout Policy (3 invalid attempts)
 
 ---
 
@@ -29,9 +29,12 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 **Fix:** Unlocked gabriel.costa in Active Directory Users and Computers and verified login on CLIENT01.
 
 **Screenshots:**
- -Error: ![Account Lockout Error](screenshots/01-lockout-error.png)
- -Fix: ![Account Unlocked in ADUC](screenshots/01-lockout-fix.png)
- -Jira Ticket: ![Resolved Lockout Ticket](screenshots/01-lockout-resolved.png)
+
+ - Error: ![Account Lockout Error](screenshots/01-lockout-error.png)
+
+ - Fix: ![Account Unlocked in ADUC](screenshots/01-lockout-fix.png)
+
+ - Jira Ticket: ![Resolved Lockout Ticket](screenshots/01-lockout-resolved.png)
 
 ---
 
@@ -43,9 +46,12 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 **Fix:** Verified user identity, reset account in Active Directory Users and Computers and confirmed login on CLIENT01
 
 **Screenshots:**
- -Error: ![Account Lockout Error](screenshots/02-expired-password-error.png)
- -Fix: ![Account Unlocked in ADUC](screenshots/02-expired-password-fix.png)
- -Jira Ticket: ![Resolved Lockout Ticket](screenshots/02-expired-password-resolved.png)
+
+ - Error: ![Account Lockout Error](screenshots/02-expired-password-error.png)
+
+ - Fix: ![Account Unlocked in ADUC](screenshots/02-expired-password-fix.png)
+
+ - Jira Ticket: ![Resolved Lockout Ticket](screenshots/02-expired-password-resolved.png)
 
 ---
 
@@ -57,9 +63,12 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 **Fix:** Reverted IPv4 properties to Obtain DNS server automatically, flushed local DNS cache (ipconfig /flushdns) and verified corp.local resolution through (nslookup corp.local). 
 
 **Screenshots:**
- -Error: ![Account Lockout Error](screenshots/03-dns-failure-error.png)
- -Fix: ![Account Unlocked in ADUC](screenshots/03-dns-failure-fix.png)
- -Jira Ticket: ![Resolved Lockout Ticket](screenshots/03-dns-failure-resolved.png)
+
+ - Error: ![Account Lockout Error](screenshots/03-dns-failure-error.png)
+
+ - Fix: ![Account Unlocked in ADUC](screenshots/03-dns-failure-fix.png)
+
+ - Jira Ticket: ![Resolved Lockout Ticket](screenshots/03-dns-failure-resolved.png)
 
 ---
 
@@ -71,6 +80,9 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 **Fix:** Added user to SG_Sales in Active Directory Users and Computers (rather than granting SG_IT broad access. User reauthenticated and confirmed access.
 
 **Screenshots:**
- -Error: ![Account Lockout Error](screenshots/04-nfts-permission-error.png)
- -Fix: ![Account Unlocked in ADUC](screenshots/04-nfts-permission-fix.png)
- -Jira Ticket: ![Resolved Lockout Ticket](screenshots/04-nfts-permission-resolved.png)
+
+ - Error: ![Account Lockout Error](screenshots/04-nfts-permission-error.png)
+
+ - Fix: ![Account Unlocked in ADUC](screenshots/04-nfts-permission-fix.png)
+
+ - Jira Ticket: ![Resolved Lockout Ticket](screenshots/04-nfts-permission-resolved.png)
