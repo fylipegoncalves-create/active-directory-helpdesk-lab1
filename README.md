@@ -95,7 +95,7 @@ A virtualized enterprise Windows environment built to simulate Tier 1/Tier 2 Hel
 
 **Root Cause:** NTFS permissions on C:\Shares\SalesData restrict access exclusively to member of SG_Sales, and the requesting user was not a member of that security group.
 
-**Fix:** Added user to SG_Sales in Active Directory Users and Computers (rather than granting SG_IT broad access. User reauthenticated and confirmed access.
+**Fix:** Added user to SG_Sales in Active Directory Users and Computers (rather than granting SG_IT broad access). User reauthenticated and confirmed access.
 
 **Screenshots:**
 
